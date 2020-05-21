@@ -106,27 +106,40 @@ aside h3{
     font-weight:normal;
 }
 .titre{
-    display: flex;
+
     border-bottom: 2px solid #006080;
-    margin-left: 50px;
+    width:90%;
+    margin:auto;
     padding-bottom: 10px;
     font-size:1.1em;
 }
-#nomprenom{
 
+.titre h3{
+    display:flex;
+}
+
+.titre h3 i{
+    display:block;
+    margin-right:10px;
+}
+#nomprenom{
+    margin-bottom: 0;
     font-size:3em;
 }
 #couleurprenom{
     color:#01579B;
+
 }
 .nom{
     margin-left:10px;
 }
 h3{
-    margin-left:10  px;
+    margin-left:10px;
+    margin-bottom:0;
 }
 h2{
     font-size:2em;
+    margin:0;
 }
 article
 {
@@ -169,10 +182,8 @@ h5 {
     margin-left:20px
 }
 
-}
-
 .dorian{
-    padding-left:10px;
+    margin-left:30px;
 }
 .police{
     padding-left:50px;
