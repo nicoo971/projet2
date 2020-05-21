@@ -1,0 +1,158 @@
+*{
+	box-sizing: border-box;
+}
+
+
+.underline
+{
+    border-bottom:2px solid #01579B;
+}
+header{
+    text-align:justify;
+    margin-left:50px;
+    margin-bottom:50px;
+}
+
+body {
+	display:flex;
+	width:800px;
+	margin:auto;
+	font-family:calibri;
+    font-size:18px;
+    border:0.5px grey solid;}   
+
+aside {
+	background-color:#508CA4;
+	width:35%;
+}
+.date1{
+    list-style-type: circle;
+}
+
+#photo-container{
+	width:100%;
+	height:200px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.loisirs{
+    margin-top:350px;
+}
+
+#photo-container img{
+	border-radius:50%;
+}
+
+aside h3{
+	width:100%;
+	text-align:center;
+	background-color:#061F12;
+	padding-top:3px;
+	padding-bottom:3px;
+	margin:0;
+    font-size:1.5em;
+    color:#508CA4;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.textes{
+    display:flex;
+}
+
+
+#contact #contact_info{
+    margin-left:20px;
+}
+
+#contact div h4, #contact div p{
+    margin:0;
+}
+
+#contact #contact_info div {
+    margin:1em 0;
+}
+
+#contact div h4{
+    font-size:1em;
+    font-weight:normal;
+}
+.titre{
+    display: flex;
+    border-bottom: 2px solid #006080;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    font-size:1.1em;
+}
+#nomprenom{
+    display:flex;
+    font-size:3em;
+}
+#couleurprenom{
+    color:#01579B;
+}
+.nom{
+    margin-left:10px;
+}
+h3{
+    margin-left:10  px;
+}
+h2{
+    font-size:2em;
+}
+article
+{
+ display:flex;
+
+}
+ul
+{
+	width:20%;
+	text-align:auto;
+	height:100px;
+    display:flex;
+    margin-bottom:0px;
+
+
+}
+.texte{
+	   padding:0px 35px 0px 80px;
+ }
+main h4 {
+	margin-top:12px;
+    font-size:1.2em;
+    margin-bottom:20px;
+}
+li{
+	font-size:smaller;
+	width:100px;
+
+
+}
+h5 { 
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.texte p{margin-top:3px;
+    margin-bottom:3px;  
+}
+.propos {
+    margin-bottom:15px;
+    margin-left:20px
+}
+
+}
+
+.fas{
+    margin-top:22px;
+    margin-right:20px;
+}
+.dorian{
+    padding-left:10px;
+}
+.police{
+    padding-left:50px;
+}
+.cercle { 
+ display: inline-block; font-size: 32px; width: 30px; padding: 10px;
+  }
