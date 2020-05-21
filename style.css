@@ -25,6 +25,7 @@ body {
 aside {
 	background-color:#508CA4;
 	width:35%;
+    position:relative;
 }
 
 .date1{
@@ -40,10 +41,33 @@ aside {
     margin:0;
     padding:0;
 }
-.loisirs{
-    margin-top:350px;
+#loisirs{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
 }
 
+#loisirs #sport{
+    padding:20px 0;
+    display:flex;
+    justify-content:center;
+}
+
+#loisirs #sport .fas{
+    display:block;
+    margin:0 0.5em;
+    border: 1px solid black;
+    border-radius:50%;
+    height:3em;
+    width:3em;
+    text-align:center;
+    line-height:3em;
+}
+
+#loisirs #sport .fas::before{
+    font-size:2.2em;
+}
 #photo-container img{
 	border-radius:50%;
     width:40%;
@@ -89,7 +113,7 @@ aside h3{
     font-size:1.1em;
 }
 #nomprenom{
-    display:flex;
+
     font-size:3em;
 }
 #couleurprenom{
@@ -147,16 +171,9 @@ h5 {
 
 }
 
-.fas{
-    margin-top:22px;
-    margin-right:20px;
-}
 .dorian{
     padding-left:10px;
 }
 .police{
     padding-left:50px;
 }
-.cercle { 
- display: inline-block; font-size: 32px; width: 30px; padding: 10px;
-  }
