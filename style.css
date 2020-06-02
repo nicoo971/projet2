@@ -1,32 +1,37 @@
 *{
-	box-sizing: border-box;
+	box-sizing:border-box;
 }
 
-
-.underline
-{
-    border-bottom:2px solid #01579B;
-}
 header{
     text-align:justify;
     margin-left:50px;
     margin-bottom:50px;
 }
 
+header #photo-container_responsive{
+    display:none;
+}
+
 body {
-	display:flex;
-	width:1000px;
-	margin:auto;
-	font-family:calibri;
+    display:flex;
+    width:1000px;
+    margin:auto;
+    font-family:calibri;
     font-size:18px;
     border:0.5px grey solid;
 }   
 
 aside {
-	background-color:#508CA4;
-	width:35%;
+    background-color:#508CA4;
+    width:35%;
     position:relative;
 }
+
+.underline
+{
+    border-bottom:2px solid #01579B;
+}
+
 
 .date1{
     list-style-type: circle;
@@ -68,9 +73,12 @@ aside {
 #loisirs #sport .fas::before{
     font-size:2.2em;
 }
+
 #photo-container img{
-	border-radius:50%;
     width:40%;
+}
+#photo-container img, #photo-container_responsive img{
+	border-radius:50%;
 }
 
 aside h3{
@@ -154,6 +162,12 @@ ul
     display:flex;
     margin-bottom:0px;
 
+}
+p{
+    font-size:0.8em
+}
+h5{
+    height:30px 
 
 }
 .texte{
@@ -167,8 +181,6 @@ main h4 {
 li{
 	font-size:smaller;
 	width:100px;
-
-
 }
 h5 { 
     margin-top:3px;
@@ -177,14 +189,63 @@ h5 {
 .texte p{margin-top:3px;
     margin-bottom:3px;  
 }
-.propos {
-    margin-bottom:15px;
-    margin-left:20px
+#propos {
+    padding:0 15px;
+    text-align:justify;
 }
 
 .dorian{
-    margin-left:30px;
+    margin-left:100px;
 }
 .police{
     padding-left:50px;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        flex-direction:column;
+        flex-wrap:wrap;
+        font-size:1.5em;
+    }
+    aside{
+        width:100%;
+        order:2;
+        min-height:500px;
+    }
+
+    aside #photo-container{
+        display:none;
+    }
+    #loisirs{
+        position:static;
+    }
+    #contact{
+        text-align:center;
+    }
+    #propos{
+        padding:0 50px;
+        text-align:justify; 
+    }
+ 
+    main{
+        order:1;
+    }
+
+    header{
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        margin-left:0;
+        padding-top:20px;
+    }
+
+    header div h1{
+        margin-top:0;
+    }
+
+    header #photo-container_responsive{
+        display:block;
+        margin:0;
+    }
+
 }
