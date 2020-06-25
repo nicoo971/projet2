@@ -19,13 +19,15 @@ body {
     font-family:calibri;
     font-size:18px;
     border:0.5px grey solid;
+    max-width:100%;
+    overflow-x:hidden; 
 }   
 
 aside {
     background-color:#508CA4;
     width:35%;
     position:relative;
-}
+} 
 
 .underline
 {
@@ -35,6 +37,7 @@ aside {
 
 .date1{
     list-style-type: circle;
+    width:20%;
 }
 
 #photo-container{
@@ -120,6 +123,7 @@ aside h3{
     margin:auto;
     padding-bottom: 10px;
     font-size:1.1em;
+
 }
 
 .titre h3{
@@ -157,15 +161,18 @@ article
 ul
 {
 	width:20%;
-	text-align:auto;
 	height:100px;
     display:flex;
     margin-bottom:0px;
+    text-align:auto;
+    max-width: max-content;
+
 
 }
 p{
     font-size:0.8em
-}
+      
+ }
 h5{
     height:30px 
 
@@ -179,14 +186,15 @@ main h4 {
     margin-bottom:20px;
 }
 li{
-	font-size:smaller;
+	font-size:1rem     ;
 	width:100px;
 }
 h5 { 
     margin-top:3px;
     margin-bottom:3px;
 }
-.texte p{margin-top:3px;
+.texte p{
+    margin-top:0.2px;
     margin-bottom:3px;  
 }
 #propos {
@@ -203,9 +211,13 @@ h5 {
 
 @media screen and (max-width:1000px) {
     body{
-        flex-direction:column;
         flex-wrap:wrap;
         font-size:1.5em;
+        width:initial;
+        border:initial;
+    }
+    main{
+        max-width:100%;
     }
     aside{
         width:100%;
@@ -225,6 +237,17 @@ h5 {
     #propos{
         padding:0 50px;
         text-align:justify; 
+    }
+    .textes{
+     flex-direction:column;
+     text-align:center;
+     margin: auto;
+
+    }
+    .police,.dorian{
+        margin:auto;
+        padding:0;
+        width:auto;
     }
  
     main{
@@ -247,5 +270,20 @@ h5 {
         display:block;
         margin:0;
     }
+    ul {
+        font-size:0.8em;
+    }
+    
 
+}
+@media screen and (max-width:450px)
+{
+    img{
+        display: none;
+
+    }
+    .petitresponsive
+    {
+      text-align:center;
+    }
 }
