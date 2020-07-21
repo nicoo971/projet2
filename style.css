@@ -212,7 +212,6 @@ h5 {
 @media screen and (max-width:1000px) {
     body{
         flex-wrap:wrap;
-        font-size:1.5em;
         width:initial;
         border:initial;
     }
@@ -286,4 +285,10 @@ h5 {
     {
       text-align:center;
     }
+    aside{
+        width:100%;
+        text-align:center;
+        display: none;
+    }
+
 }
